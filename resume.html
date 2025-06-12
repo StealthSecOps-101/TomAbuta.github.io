@@ -1,0 +1,466 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Tom Abuta</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Resume</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li class="active"><a href="resume.html">Resume</a></li>
+							<li><a href="projects.html">Portfolio</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://x.com/mceetmon" target="_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/tmon.abuta" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.linkedin.com/in/tom-abuta-13a558197/" target="_blank" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/StealthSecOps-101" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom Abuta - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .resume-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 0;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        .tropical-border {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: linear-gradient(45deg, #ff6b9d, #4ecdc4, #45b7d1, #96ceb4, #feca57);
+            background-size: 400% 400%;
+            animation: tropicalGradient 8s ease infinite;
+        }
+
+        @keyframes tropicalGradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .tropical-border::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20"><path d="M0,10 Q25,0 50,10 T100,10 L100,20 L0,20 Z" fill="%23ffffff"/></svg>') repeat-x;
+            background-size: 100px 20px;
+        }
+
+        .resume-content {
+            display: flex;
+            margin-top: 60px;
+        }
+
+        .sidebar {
+            width: 280px;
+            background: linear-gradient(180deg, #4ecdc4 0%, #44a08d 100%);
+            padding: 40px 30px;
+            color: white;
+        }
+
+        .profile-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            background: #f0f0f0;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            border: 4px solid white;
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="35" r="15" fill="%23ccc"/><ellipse cx="50" cy="75" rx="25" ry="20" fill="%23ccc"/></svg>');
+            background-size: cover;
+        }
+
+        .name {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .title {
+            font-size: 14px;
+            letter-spacing: 2px;
+            opacity: 0.9;
+            text-transform: uppercase;
+        }
+
+        .sidebar-section {
+            margin-bottom: 35px;
+        }
+
+        .sidebar-section h3 {
+            font-size: 16px;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            padding-bottom: 8px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 12px;
+        }
+
+        .contact-icon {
+            width: 16px;
+            height: 16px;
+            margin-right: 12px;
+            opacity: 0.8;
+        }
+
+        .skill-item {
+            margin-bottom: 8px;
+            font-size: 13px;
+            text-align: center;
+            padding: 6px 12px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 40px 40px;
+            background: white;
+        }
+
+        .main-section {
+            margin-bottom: 40px;
+        }
+
+        .main-section h2 {
+            font-size: 16px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #333;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #4ecdc4;
+            padding-bottom: 8px;
+        }
+
+        .summary {
+            font-size: 13px;
+            line-height: 1.6;
+            color: #555;
+            text-align: justify;
+        }
+
+        .job {
+            margin-bottom: 30px;
+        }
+
+        .job-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .company-info {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 12px;
+        }
+
+        .job-description {
+            font-size: 12px;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        .job-description ul {
+            margin-left: 20px;
+            margin-top: 8px;
+        }
+
+        .job-description li {
+            margin-bottom: 6px;
+        }
+
+        .education-item {
+            margin-bottom: 20px;
+            text-align: right;
+        }
+
+        .degree {
+            font-size: 13px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 3px;
+        }
+
+        .school {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 2px;
+        }
+
+        .year {
+            font-size: 11px;
+            color: #888;
+        }
+
+        .tropical-accent {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, #ff6b9d, #4ecdc4);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 10px;
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <div class="tropical-border"></div>
+        
+        <div class="resume-content">
+            <div class="sidebar">
+                <div class="profile-section">
+                    <div class="profile-image" img src = 'image/prof1'> </div>
+                    <div class="name">TOM<br>ABUTA</div>
+                    <div class="title">Network and Cloud Security</div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>CONTACT</h3>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <span>0717335467</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <span>tom.a.mogere@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🏠</span>
+                        <span>Nairobi,Kenya</span>
+                    </div>
+                    <!-- <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <span>IG @username</span>
+                    </div> -->
+                    <div class="contact-item">
+                        <span class="contact-icon">🌐</span>
+                        <span>https://stealthsecops-101.github.io/TomAbuta.github.io/#</span>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>EDUCATION</h3>
+                    <div class="education-item">
+                        <div class="degree">Information Security and Forensic </div>
+                        <div class="school">KCA University</div>
+                        <div class="school">Nairobi Kenya</div>
+                       <!--  <div class="year">2023-Present</div> -->
+                    </div>
+                    <div class="education-item">
+                        <div class="degree">Physical Planning</div>
+                        <div class="school">University of Kabianga</div>
+                        <div class="school">Kericho, Kenya</div>
+                       <!--  <div class="year">2016-2021</div> -->
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>SKILLS</h3>
+                    <div class="skill-item">Networking</div>
+                    <div class="skill-item">System Administration</div>
+                    <div class="skill-item">Good communication skills</div>
+                    <div class="skill-item">Team Player</div>
+                    <div class="skill-item">Attention to Detail</div>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <div class="main-section">
+                    <h2>PROFILE</h2>
+                    <div class="summary">
+                        PROFILE	Diligent and driven, with a foundation in network security and a passion for cyber defense, I am an entry level Cyber Security Specialist. Skilled in fortifying networks against cyber threats, conducting vulnerability assessments, and swiftly responding to incidents, I safeguard organizational assets. Proficient in network configurations and compliance standards, I identify and remediate vulnerabilities while ensuring regulatory adherence. Eager to expand expertise in cloud security and cryptography, I thrive in collaborative environments and am committed to continuous learning. With a focus on safeguarding digital assets and countering cyber threats, I am poised to make a meaningful impact.
+                    </div>
+                </div>
+
+                <div class="main-section">
+                    <h2>WORK EXPERIENCE</h2>
+                    
+                    <div class="job">
+                        <div class="job-title">Sales Representative</div>
+                        <div class="company-info">Joypet Services and Printers Limited</div>
+                        <div class="job-description">
+                            <ul>
+                                <li>•	Identified and capitalized on sales opportunities to increase revenue by 50%</li>
+                                <li>•	Analyzed customer data to identify key trends and insights that can be used to inform sales strategies</li>
+                                <li>•	Analyzed competitor pricing and product offerings to ensure market competitiveness</li>
+                                <li>•	Analyzed customer feedback to identify opportunities for improvement and increased customer satisfaction by 70%</li>
+                                <li>•	Developed creative marketing campaigns that increased brand awareness and boosted sales by 80%</li>
+                                <li>•	Developed a network of industry contacts that resulted in new business opportunities</li>
+                                <li>•	Collaborated with cross-functional teams to develop and implement promotional offers that increased sales by 60%</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-title">OPERATION ASSOCIATE</div>
+                        <div class="company-info">Royalty Empire Entertainment Company</div>
+                        <div class="job-description">
+                            <ul>
+                                <li>•	Developed and maintained relationships with vendors, resulting in improved service quality and cost savings</li>
+                                <li>•	Collaborated with cross-functional teams to identify and resolve customer service issues, resulting in improved customer satisfaction</li>
+                                <li>•	Developed and implemented a system for tracking and monitoring project progress, resulting in improved project management</li>
+                                <li>•	Developed and implemented an event planning system that improved operational efficiency by 90% Developed and maintained a comprehensive database of contacts and resources, resulting in improved communication and collaboration</li>
+                                <li>•	Created and managed a budget for a project, resulting in a 40% cost savings</li>
+                                <li>•	Formulated and implemented a marketing strategy that increased brand awareness by 80%</li>
+                                <li>•	Developed and implemented policies and procedures that improved operational efficiency</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+       
+    </div>
+</body>
+
+
+
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>7529 00200<br />
+								Nairobi, Kenya</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(+254) 717335467</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">tom.a.mogere@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://x.com/mceetmon" target="_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.facebook.com/tmon.abuta" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.linkedin.com/in/tom-abuta-13a558197/" target="_blank" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+									<li><a href="https://github.com/StealthSecOps-101" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; </li><li>Design: <a href="https://html5up.net">TomAbuta</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
